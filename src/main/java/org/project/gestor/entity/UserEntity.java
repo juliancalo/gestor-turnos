@@ -7,7 +7,8 @@ import org.project.gestor.enums.Role;
 
 @Getter
 @Setter
-@Entity(name="user")
+@Entity
+@Table(name = "users")
 public class UserEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

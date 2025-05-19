@@ -5,6 +5,8 @@ import lombok.Getter;
 import lombok.Setter;
 import org.project.gestor.enums.Category;
 
+import java.time.LocalDateTime;
+
 @Entity
 @Getter
 @Setter
@@ -17,7 +19,7 @@ public class LocalEntity {
     private String address;
     private String email;
     private String phone;
-    private String officeHours;
+    private LocalDateTime officeHours;
 
     @ManyToOne
     private UserEntity user;
